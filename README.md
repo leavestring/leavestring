@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+## 开源贡献
+
+- **particle-agent**(开源 AI 个人助理)— 发现 SQLite 查询层未校验 `limit` 参数的缺陷(`LIMIT -1` 会返回全表),实现统一校验函数并编写 16 个回归测试;通过"未修复代码 13 失败 → 修复后全过"的对照验证证明修复有效性。([PR #13](https://github.com/codewithzubair07/particle-agent/pull/13),open · 待合并)
+
 <!--
 **leavestring/leavestring** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
