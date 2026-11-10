@@ -2,6 +2,7 @@
 
 ## 开源贡献
 
+- **mcp-use**(10.8k★,MCP 全栈框架)— 为 MCP Apps 新增 `views.resourceUri` 公开 API,允许服务端自定义每个视图的 `ui://` 资源 URI,解决宿主按 URI 缓存导致重新部署后仍返回旧视图文档的问题;覆盖 `tools/list`、`tools/call`、`resources/read` 与 OAuth 资源门控全链路,并在挂载期完成 `ui://` 前缀与唯一性校验,无配置时保持原 URI 逐字节不变。附 5 个新测试与文档。(363+/16-,7 文件)([PR #3062](https://github.com/mcp-use/mcp-use/pull/3062),open · 待 review)
 - **particle-agent**(开源 AI 个人助理)— 发现 SQLite 查询层未校验 `limit` 参数的缺陷(`LIMIT -1` 会返回全表),实现统一校验函数并编写 16 个回归测试;通过"未修复代码 13 失败 → 修复后全过"的对照验证证明修复有效性。([PR #13](https://github.com/codewithzubair07/particle-agent/pull/13),已合并)
 - **awesome-dsh-plugin**(DSH 插件市场)— 将个人开发的背景主题插件 [awesome-dsh-background-plugin](https://github.com/leavestring/awesome-dsh-background-plugin) 按贡献规范收录进官方插件列表。([PR #1071](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/1071),已合并)
 
