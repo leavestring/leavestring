@@ -11,7 +11,11 @@
 
 ### 进行中
 
-- **hermes-agent**(开源 AI 个人助理)— 在日常使用桌面版时发现,已保存的 API Key 虽有删除能力,但停留在掩码状态时看不到删除入口;改进后提供商及工具密钥无需进入编辑模式即可删除,并保留二次确认和配置档隔离。补充 2 个真实界面交互回归测试,覆盖取消、确认与目标配置档。基于已有 PR 保留原作者署名并完善实现,设置模块 615 项测试通过。([PR #152606](https://github.com/NousResearch/hermes-agent/pull/152606),open · 待 review)
+- **hermes-agent**(开源 AI 个人助理)— 改善桌面版 API Key 删除入口,让已保存的提供商及工具密钥无需进入编辑模式即可删除;保留二次确认和配置档隔离,补充 2 个真实界面交互回归测试,覆盖取消、确认与目标配置档。基于已有 PR 保留原作者署名并完善实现,设置模块 615 项测试通过。([PR #152606](https://github.com/NousResearch/hermes-agent/pull/152606),open · 待 review)
+
+### 代码审查
+
+- **mcp-use**(10.8k★,MCP 全栈框架)— 在 Windows 11 / Node 24.22.1 上独立验证 [PR #2699](https://github.com/mcp-use/mcp-use/pull/2699):对照 `main` 与 PR head 跑 3 个测试文件,确认 `file:` loader、Windows 原生路径分隔符与 CRLF 三处修复生效;并指出 `skills.test.ts` 在未开启开发者模式的 Windows 上仍会因 `symlinkSync` 报 `EPERM`,该测试尚未完全环境无关。([验证评论](https://github.com/mcp-use/mcp-use/pull/2699#issuecomment-6785370598))
 
 ### 提案与讨论
 
