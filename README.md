@@ -12,6 +12,7 @@
 ### 进行中
 
 - **hermes-agent**(开源 AI 个人助理)— 改善桌面版 API Key 删除入口,让已保存的提供商及工具密钥无需进入编辑模式即可删除;保留二次确认和配置档隔离,补充 2 个真实界面交互回归测试,覆盖取消、确认与目标配置档。基于已有 PR 保留原作者署名并完善实现,设置模块 615 项测试通过。([PR #152606](https://github.com/NousResearch/hermes-agent/pull/152606),open · 待 review)
+- **nanobrowser**(14.3k★,浏览器 Agent 扩展)— 定位并修复自定义 OpenAI-compatible 端点在缺少 API key 时把 provider kind 当作 token 发送、导致远端返回 401 的问题:仅允许本机回环地址无 key 运行,远端缺 key 在请求前给出可操作错误,并把错误包装成 `ModelUnavailable`;补充 4 个测试,用“回退源码后 2/18 失败、恢复后 18/18 通过”的对照验证修复有效性,全量 819 项测试通过。([PR #386](https://github.com/nanobrowser/nanobrowser/pull/386),open · 待 review)
 
 ### 代码审查
 
